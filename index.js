@@ -5,8 +5,8 @@ module.exports = {
     ecmaFeatures: { jsx: true }
   },
   env: {
-    browser: true,
-    node: true,
+    browser: false,
+    node: false,
     es6: true
   },
   plugins: ['babel'],
