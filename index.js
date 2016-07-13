@@ -11,15 +11,6 @@ module.exports = {
   },
   plugins: ['babel'],
   rules: {
-    // rules from babel plugin
-    'babel/array-bracket-spacing': 'off',
-    'babel/arrow-parens': 'off',
-    'babel/flow-object-type': 'off',
-    'babel/generator-star-spacing': ['warn', 'after'],
-    'babel/new-cap': 'off',
-    'babel/no-await-in-loop': 'off',
-    'babel/object-curly-spacing': ['warn', 'always'],
-    'babel/object-shorthand': 'off',
     // possible errors
     'comma-dangle': ['error', 'never'],
     'no-cond-assign': ['error', 'except-parens'],
@@ -215,7 +206,7 @@ module.exports = {
     'arrow-parens': 'off',
     'arrow-spacing': ['warn', { before: true, after: true }],
     'constructor-super': ['warn'],
-    'generator-star-spacing': ['warn', { before: false, after: true }],
+    'generator-star-spacing': 'off',
     'no-class-assign': ['error'],
     'no-confusing-arrow': 'off',
     'no-const-assign': ['error'],
@@ -235,6 +226,15 @@ module.exports = {
     'prefer-template': 'off',
     'require-yield': 'off',
     'template-curly-spacing': ['error', 'never'],
-    'yield-star-spacing': ['warn', { before: false, after: true }]
+    'yield-star-spacing': ['warn', { before: false, after: true }],
+    // rules from babel plugin
+    'babel/array-bracket-spacing': 'off',
+    'babel/arrow-parens': 'off',
+    'babel/flow-object-type': 'off',
+    'babel/generator-star-spacing': ['warn', 'after'],
+    'babel/new-cap': 'off',
+    'babel/no-await-in-loop': 'off',
+    'babel/object-curly-spacing': ['warn', 'always'],
+    'babel/object-shorthand': 'off'
   }
 };
