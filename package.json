@@ -1,23 +1,12 @@
 {
   "name": "eslint-config-pureprofile",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "description": "An eslint config module",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pureprofile-warp/eslint-config-pureprofile.git"
-  },
   "author": "Pureprofile <techteam@pureprofile.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/pureprofile-warp/eslint-config-pureprofile/issues"
-  },
-  "homepage": "https://github.com/pureprofile-warp/eslint-config-pureprofile#readme",
-  "peerDependencies": {
-    "babel-eslint": "*",
-    "eslint-plugin-babel": "*"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pureprofile-warp/eslint-config-pureprofile.git"
   }
 }

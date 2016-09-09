@@ -1,15 +1,4 @@
 module.exports = {
-  parser: 'babel-eslint',
-  parserOptions: {
-    ecmaVersion: 6,
-    ecmaFeatures: { jsx: true }
-  },
-  env: {
-    browser: false,
-    node: false,
-    es6: true
-  },
-  plugins: ['babel'],
   rules: {
     // possible errors
     'comma-dangle': ['error', 'never'],
@@ -226,15 +215,6 @@ module.exports = {
     'prefer-template': 'off',
     'require-yield': 'off',
     'template-curly-spacing': ['error', 'never'],
-    'yield-star-spacing': ['warn', { before: false, after: true }],
-    // rules from babel plugin
-    'babel/array-bracket-spacing': 'off',
-    'babel/arrow-parens': 'off',
-    'babel/flow-object-type': 'off',
-    'babel/generator-star-spacing': ['warn', 'after'],
-    'babel/new-cap': 'off',
-    'babel/no-await-in-loop': 'off',
-    'babel/object-curly-spacing': ['warn', 'always'],
-    'babel/object-shorthand': 'off'
+    'yield-star-spacing': ['warn', { before: false, after: true }]
   }
 };
