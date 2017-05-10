@@ -240,7 +240,7 @@ module.exports = {
     'prefer-template': 'off',
     'require-yield': ['warn'],
     'rest-spread-spacing': ['error', 'never'],
-    'sort-imports': ['warn', { ignoreCase: true, ignoreMemberSort: false, memberSyntaxSortOrder: ['none', 'all', 'single', 'multiple'] }],
+    'sort-imports': 'off',
     'symbol-description': ['warn'],
     'template-curly-spacing': ['error', 'never'],
     'yield-star-spacing': ['warn', { before: false, after: true }]
