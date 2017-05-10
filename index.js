@@ -103,7 +103,7 @@ module.exports = {
     'no-warning-comments': 'off',
     'no-with': ['error'],
     'radix': ['error'],
-    'require-await': ['warn'],
+    'require-await': 'off',
     'vars-on-top': 'off',
     'wrap-iife': ['error'],
     'yoda': ['error', 'never'],
