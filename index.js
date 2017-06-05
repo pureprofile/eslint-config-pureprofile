@@ -242,7 +242,7 @@ module.exports = {
     'rest-spread-spacing': ['error', 'never'],
     'sort-imports': 'off',
     'symbol-description': ['warn'],
-    'template-curly-spacing': ['error', 'never'],
+    'template-curly-spacing': ['warn', 'never'],
     'yield-star-spacing': ['warn', { before: false, after: true }]
   }
 };
