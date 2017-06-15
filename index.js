@@ -121,7 +121,7 @@ module.exports = {
     'no-undef': ['error'],
     'no-undefined': 'off',
     'no-unused-vars': ['error', { vars: 'all', args: 'none', caughtErrors: 'all', caughtErrorsIgnorePattern: '^ignore' }],
-    'no-use-before-define': ['error'],
+    'no-use-before-define': 'off',
     // node.js and commonjs
     'callback-return': ['warn', ['callback', 'cb']],
     'global-require': ['warn'],
