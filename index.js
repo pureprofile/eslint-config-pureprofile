@@ -20,7 +20,7 @@ module.exports = {
     'no-empty': ['error', { allowEmptyCatch: true }],
     'no-ex-assign': ['error'],
     'no-extra-boolean-cast': ['warn'],
-    'no-extra-parens': ['warn'],
+    'no-extra-parens': 'off',
     'no-extra-semi': ['warn'],
     'no-func-assign': ['error'],
     'no-inner-declarations': ['error', 'functions'],
