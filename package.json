@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-pureprofile",
-  "version": "2.2.5",
+  "version": "2.3.0",
   "description": "An eslint config module",
   "main": "index.js",
   "author": "Pureprofile <techteam@pureprofile.com>",
@@ -8,5 +8,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/pureprofile-warp/eslint-config-pureprofile.git"
+  },
+  "peerDependencies": {
+    "eslint": ">=4.6.0"
   }
 }
