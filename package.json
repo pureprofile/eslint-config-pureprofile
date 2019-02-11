@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-pureprofile",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "description": "An eslint config module",
   "main": "index.js",
   "author": "Pureprofile <techteam@pureprofile.com>",
