@@ -124,7 +124,7 @@ module.exports = {
     'no-undef-init': ['error'],
     'no-undef': ['error'],
     'no-undefined': 'off',
-    'no-unused-vars': ['error', { vars: 'all', args: 'none', caughtErrors: 'all', caughtErrorsIgnorePattern: '^ignore' }],
+    'no-unused-vars': 'off', // doesn't work with TypeScript, use TSLint to catch these
     'no-use-before-define': 'off',
     // node.js and commonjs
     'callback-return': ['warn', ['callback', 'cb']],
