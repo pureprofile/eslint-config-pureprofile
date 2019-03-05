@@ -331,7 +331,7 @@ if (reactVersion) {
     'react/prop-types': OFF,
     'react/no-unescaped-entities': OFF,
     // JSX-specific rules
-    'react/jsx-boolean-value': ['warn', 'always'],
+    'react/jsx-boolean-value': ['warn', 'always'], // v3.0.1 - 'never' conflicts with tslint
     'react/jsx-child-element-spacing': WARN,
     'react/jsx-closing-bracket-location': OFF,
     'react/jsx-closing-tag-location': OFF,
