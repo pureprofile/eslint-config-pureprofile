@@ -57,7 +57,7 @@ const eslintConfig = {
     'accessor-pairs': ERROR,
     'array-callback-return': OFF,
     'block-scoped-var': ERROR,
-    'class-methods-use-this': WARN,
+    'class-methods-use-this': OFF, // doesn't really work well in too many cases
     'complexity': OFF,
     'consistent-return': OFF,
     'curly': ['error', 'all'],
