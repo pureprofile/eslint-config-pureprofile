@@ -57,7 +57,7 @@ const eslintConfig = {
     'accessor-pairs': ERROR,
     'array-callback-return': OFF,
     'block-scoped-var': ERROR,
-    'class-methods-use-this': OFF, // doesn't really work well in too many cases
+    'class-methods-use-this': OFF, // v3.0.2 - doesn't really work well in too many cases
     'complexity': OFF,
     'consistent-return': OFF,
     'curly': ['error', 'all'],
@@ -351,7 +351,7 @@ if (reactVersion) {
     'react/jsx-no-literals': OFF,
     'react/jsx-no-target-blank': WARN,
     'react/jsx-no-undef': WARN,
-    'react/jsx-one-expression-per-line': WARN,
+    'react/jsx-one-expression-per-line': OFF, // v3.0.3 - keeps messing up with plain strings in jsx
     'react/jsx-curly-brace-presence': WARN,
     'react/jsx-fragments': OFF,
     'react/jsx-pascal-case': OFF,
