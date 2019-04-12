@@ -345,7 +345,7 @@ if (reactVersion) {
     'react/jsx-key': WARN,
     'react/jsx-max-depth': OFF,
     'react/jsx-max-props-per-line': ['warn', { maximum: 1, when: 'multiline' }],
-    'react/jsx-no-bind': WARN,
+    'react/jsx-no-bind': [WARN, { ignoreRefs: true }], // v3.0.4 - ingore refs in react
     'react/jsx-no-comment-textnodes': ERROR,
     'react/jsx-no-duplicate-props': ERROR,
     'react/jsx-no-literals': OFF,
