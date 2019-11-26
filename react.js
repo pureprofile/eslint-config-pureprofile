@@ -44,6 +44,8 @@ const eslintConfig = {
     'jsx-quotes': [WARN, 'prefer-double'],
     'linebreak-style': [WARN, 'unix'],
     'no-trailing-spaces': WARN,
+    'quote-props': OFF,
+    'quotes': ['warn', 'single', { allowTemplateLiterals: true }],
     'semi': [ERROR, 'always'],
     'semi-spacing': [WARN, { before: false, after: true }],
     'semi-style': [WARN, 'last'],
