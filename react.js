@@ -31,7 +31,7 @@ const eslintConfig = {
     'no-useless-return': ERROR,
     'no-process-env': ERROR,
     'no-process-exit': ERROR,
-    // Stylistic Issues
+    // stylistic issues
     'block-spacing': WARN,
     'brace-style': [WARN, '1tbs', { allowSingleLine: true }],
     'comma-dangle': [WARN, 'never'],
@@ -46,7 +46,23 @@ const eslintConfig = {
     'no-trailing-spaces': WARN,
     'semi': [ERROR, 'always'],
     'semi-spacing': [WARN, { before: false, after: true }],
-    'semi-style': [WARN, 'last']
+    'semi-style': [WARN, 'last'],
+    // disable unwanted recommended rules
+    'camelcase': OFF,
+    'no-unused-vars': OFF,
+    'require-atomic-updates': OFF,
+    'react/jsx-child-element-spacing': OFF,
+    'react/jsx-curly-brace-presence': OFF,
+    '@typescript-eslint/camelcase': OFF,
+    '@typescript-eslint/explicit-function-return-type': OFF,
+    '@typescript-eslint/interface-name-prefix': OFF,
+    '@typescript-eslint/no-empty-interface': OFF,
+    '@typescript-eslint/no-inferrable-types': OFF,
+    '@typescript-eslint/no-misused-promises': OFF,
+    '@typescript-eslint/no-this-alias': OFF,
+    '@typescript-eslint/no-unused-vars': OFF,
+    '@typescript-eslint/no-use-before-define': OFF,
+    '@typescript-eslint/unbound-method': OFF
   }
 };
 
