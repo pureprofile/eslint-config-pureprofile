@@ -64,6 +64,7 @@ const eslintConfig = {
     '@typescript-eslint/no-this-alias': OFF,
     '@typescript-eslint/no-unused-vars': OFF,
     '@typescript-eslint/no-use-before-define': OFF,
+    '@typescript-eslint/require-await': OFF,
     '@typescript-eslint/unbound-method': OFF
   }
 };
