@@ -65,7 +65,7 @@ const eslintConfig = {
     'space-unary-ops': [WARN, { words: true, nonwords: false }],
     'switch-colon-spacing': WARN,
     'template-tag-spacing': WARN,
-    'unicode-bom': ERROR
+    'unicode-bom': ERROR,
     // disable unwanted recommended rules
     'camelcase': OFF,
     'no-unused-vars': OFF,
