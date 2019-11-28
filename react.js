@@ -67,6 +67,23 @@ const eslintConfig = {
     'switch-colon-spacing': WARN,
     'template-tag-spacing': WARN,
     'unicode-bom': ERROR,
+    // eslint-plugin-react rules
+    'react/no-unknown-property': WARN,
+    'react/self-closing-comp': WARN,
+    'react/jsx-boolean-value': [WARN, 'always'],
+    'react/jsx-closing-bracket-location': OFF, // tried, doesn't look nice
+    'react/jsx-closing-tag-location': WARN,
+    'react/jsx-curly-newline': OFF, // tried, doesn't look nice
+    'react/jsx-curly-spacing': WARN,
+    'react/jsx-equals-spacing': WARN,
+    'react/jsx-first-prop-new-line': WARN,
+    'react/jsx-indent': [WARN, 2, { checkAttributes: false, indentLogicalExpressions: false }],
+    'react/jsx-indent-props': [WARN, 'first'],
+    'react/jsx-max-props-per-line': [WARN, { maximum: 1, when: 'multiline' }],
+    'react/jsx-no-useless-fragment': WARN,
+    'react/jsx-props-no-multi-spaces': WARN,
+    'react/jsx-tag-spacing': WARN,
+    'react/jsx-wrap-multilines': WARN,
     // disable unwanted recommended rules
     'camelcase': OFF,
     'no-unused-vars': OFF,
@@ -81,6 +98,7 @@ const eslintConfig = {
     '@typescript-eslint/no-empty-interface': OFF,
     '@typescript-eslint/no-inferrable-types': OFF,
     '@typescript-eslint/no-misused-promises': OFF,
+    '@typescript-eslint/no-non-null-assertion': OFF,
     '@typescript-eslint/no-this-alias': OFF,
     '@typescript-eslint/no-unused-vars': OFF,
     '@typescript-eslint/no-use-before-define': OFF,
