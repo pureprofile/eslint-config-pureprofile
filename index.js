@@ -265,7 +265,9 @@ const eslintConfig = {
     'sort-imports': OFF,
     'symbol-description': WARN,
     'template-curly-spacing': ['warn', 'never'],
-    'yield-star-spacing': ['warn', { before: false, after: true }]
+    'yield-star-spacing': ['warn', { before: false, after: true }],
+    // Disable
+    'require-atomic-updates': OFF
   }
 };
 
@@ -289,6 +291,36 @@ if (typescriptVersion) {
   eslintConfig.parser = '@typescript-eslint/parser';
   eslintConfig.parserOptions = eslintConfig.parserOptions || {};
   eslintConfig.parserOptions.sourceType = 'module';
+
+  eslintConfig.plugins = eslintConfig.plugins || [];
+  eslintConfig.plugins.push(
+    '@typescript-eslint'
+  );
+
+  eslintConfig.extends = eslintConfig.extends || [];
+  eslintConfig.extends.push(
+    'eslint:recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking'
+  );
+
+  [
+    '@typescript-eslint/camelcase',
+    '@typescript-eslint/explicit-function-return-type',
+    '@typescript-eslint/require-await',
+    '@typescript-eslint/no-unused-vars',
+    '@typescript-eslint/no-non-null-assertion',
+    '@typescript-eslint/interface-name-prefix',
+    '@typescript-eslint/no-use-before-define',
+    '@typescript-eslint/no-unnecessary-type-assertion',
+    '@typescript-eslint/no-explicit-any',
+    '@typescript-eslint/no-empty-interface',
+    '@typescript-eslint/no-inferrable-types',
+    '@typescript-eslint/unbound-method'
+  ].forEach(r => eslintConfig.rules[r] = OFF);
+
+  eslintConfig.rules['@typescript-eslint/prefer-regexp-exec'] = WARN;
 }
 
 let reactVersion;
