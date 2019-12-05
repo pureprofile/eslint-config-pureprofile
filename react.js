@@ -1,6 +1,12 @@
+const fs = require('fs');
+const path = require('path');
+
 const OFF = 'off';
 const WARN = 'warn';
 const ERROR = 'error';
+
+const isCreateReactApp = fs.existsSync(path.resolve(__dirname, '..', 'react-scripts'));
+// console.log(`isCreateReactApp=${isCreateReactApp}`);
 
 const eslintConfig = {
   parser: '@typescript-eslint/parser',
@@ -8,14 +14,14 @@ const eslintConfig = {
     '@typescript-eslint',
     'react'
   ],
-  extends: [
+  extends: ([
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'react-app'
-  ],
+    isCreateReactApp ? 'react-app' : undefined
+  ]).filter(x => x != null),
   settings: {
     react: {
       version: 'detect'

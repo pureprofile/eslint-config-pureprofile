@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-pureprofile",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "engines": {
     "node": ">=10.0.0"
   },
