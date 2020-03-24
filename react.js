@@ -41,7 +41,7 @@ const eslintConfig = {
     // stylistic issues
     'block-spacing': WARN,
     'brace-style': [WARN, '1tbs', { allowSingleLine: true }],
-    'comma-dangle': [WARN, 'never'],
+    'comma-dangle': OFF,
     'comma-spacing': WARN,
     'comma-style': [WARN, 'last'],
     'computed-property-spacing': WARN,
@@ -66,7 +66,7 @@ const eslintConfig = {
     'semi-spacing': [WARN, { before: false, after: true }],
     'semi-style': [WARN, 'last'],
     'space-before-blocks': WARN,
-    'space-before-function-paren': [WARN, { anonymous: 'always', named: 'never' }],
+    'space-before-function-paren': OFF,
     'space-in-parens': WARN,
     'space-infix-ops': WARN,
     'space-unary-ops': [WARN, { words: true, nonwords: false }],
