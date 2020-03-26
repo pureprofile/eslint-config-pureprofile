@@ -214,7 +214,7 @@ const eslintConfig = {
     'one-var': ['warn', 'never'],
     'one-var-declaration-per-line': ['warn', 'always'],
     'operator-assignment': ['warn', 'always'],
-    'operator-linebreak': ['warn', 'after'],
+    'operator-linebreak': OFF,
     'padded-blocks': OFF,
     'quote-props': OFF,
     'quotes': ['warn', 'single', { allowTemplateLiterals: true }],
