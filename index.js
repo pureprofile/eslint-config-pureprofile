@@ -321,6 +321,7 @@ if (typescriptVersion) {
   ].forEach(r => eslintConfig.rules[r] = OFF);
 
   eslintConfig.rules['@typescript-eslint/prefer-regexp-exec'] = WARN;
+  eslintConfig.rules['@typescript-eslint/explicit-module-boundary-types'] = OFF;
 }
 
 let reactVersion;
