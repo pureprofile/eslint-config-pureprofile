@@ -155,7 +155,7 @@ const eslintConfig = {
     'array-element-newline': OFF,
     'block-spacing': WARN,
     'brace-style': ['warn', '1tbs', { allowSingleLine: true }],
-    'camelcase': ['warn', { properties: 'never' }],
+    'camelcase': OFF,
     'capitalized-comments': OFF,
     'comma-dangle': OFF,
     'comma-spacing': WARN,
@@ -308,20 +308,21 @@ if (typescriptVersion) {
   [
     '@typescript-eslint/camelcase',
     '@typescript-eslint/explicit-function-return-type',
-    '@typescript-eslint/require-await',
-    '@typescript-eslint/no-unused-vars',
-    '@typescript-eslint/no-non-null-assertion',
+    '@typescript-eslint/explicit-module-boundary-types',
     '@typescript-eslint/interface-name-prefix',
-    '@typescript-eslint/no-use-before-define',
-    '@typescript-eslint/no-unnecessary-type-assertion',
-    '@typescript-eslint/no-explicit-any',
     '@typescript-eslint/no-empty-interface',
+    '@typescript-eslint/no-explicit-any',
     '@typescript-eslint/no-inferrable-types',
-    '@typescript-eslint/unbound-method'
+    '@typescript-eslint/no-non-null-assertion',
+    '@typescript-eslint/no-unnecessary-type-assertion',
+    '@typescript-eslint/no-unused-vars',
+    '@typescript-eslint/no-use-before-define',
+    '@typescript-eslint/require-await',
+    '@typescript-eslint/restrict-template-expressions',
+    '@typescript-eslint/unbound-method',
   ].forEach(r => eslintConfig.rules[r] = OFF);
 
   eslintConfig.rules['@typescript-eslint/prefer-regexp-exec'] = WARN;
-  eslintConfig.rules['@typescript-eslint/explicit-module-boundary-types'] = OFF;
 }
 
 let reactVersion;
