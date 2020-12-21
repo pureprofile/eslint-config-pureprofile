@@ -130,10 +130,10 @@ const eslintConfig = {
     'no-delete-var': ERROR,
     'no-label-var': ERROR,
     'no-restricted-globals': ERROR,
-    'no-shadow': ERROR,
+    'no-shadow': OFF, // TypeScript has this covered
     'no-shadow-restricted-names': ERROR,
     'no-undef-init': ERROR,
-    'no-undef': ERROR,
+    'no-undef': OFF, // TypeScript has this covered,
     'no-undefined': OFF,
     'no-unused-vars': OFF, // doesn't work with TypeScript, use TSLint to catch these
     'no-use-before-define': OFF,
