@@ -316,6 +316,8 @@ if (typescriptVersion) {
     '@typescript-eslint/no-non-null-assertion',
     '@typescript-eslint/no-unnecessary-type-assertion',
     '@typescript-eslint/no-unused-vars',
+    '@typescript-eslint/no-unsafe-member-access',
+    '@typescript-eslint/no-unsafe-return',
     '@typescript-eslint/no-use-before-define',
     '@typescript-eslint/require-await',
     '@typescript-eslint/restrict-template-expressions',
