@@ -1,10 +1,41 @@
 # eslint-config-pureprofile
 
+## what is this?
+
+this is compose config file for (usage of react plugins is autodetected based if a project has react installed in dependencies):
+
+```
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:jest/recommended",
+    "airbnb",
+    "airbnb/hooks",
+    "airbnb-typescript",
+    "react-app",
+    "react-app/jest",
+    "prettier"
+  ],
+```
+
+some rules were disabled because they did conflict with the way we write code, but not too many, please see index.js for details
+
+## how do i use this?
+
 in your package json just add:
 
 ```
-npm install --save --save-exact husky@4 lint-staged eslint-config-pureprofile prettier
+npm install --save eslint-config-pureprofile
+npm install --save-dev husky@4 lint-staged prettier
 ```
+
+and add these bits into your package.json:
 
 ```
 "scripts": {
