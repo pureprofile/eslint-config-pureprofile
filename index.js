@@ -129,6 +129,7 @@ eslintConfig.rules = {
 // alter some rule behaviour
 eslintConfig.rules = Object.assign(eslintConfig.rules, {
   "no-param-reassign": ["error", { "props": false }],
+  "prefer-const": ["error", {"destructuring": "all"}],
   "prefer-destructuring": ["error", { "VariableDeclarator": { "array": false, "object": true }, "AssignmentExpression": { "array": false, "object": false } }, { "enforceForRenamedProperties": false }],
   "@typescript-eslint/no-unused-vars": ["warn", { "vars": "all", "args": "none", "ignoreRestSiblings": false }],
 });
