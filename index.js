@@ -104,6 +104,7 @@ eslintConfig.rules = {
   "@typescript-eslint/no-unsafe-member-access": "off",
   "@typescript-eslint/no-unsafe-return": "off",
   "@typescript-eslint/restrict-template-expressions": "off",
+  "@typescript-eslint/unbound-method": "off",
   "class-methods-use-this": "off",
   "consistent-return": "off",
   "func-names": "off",
@@ -128,10 +129,10 @@ eslintConfig.rules = {
 
 // alter some rule behaviour
 eslintConfig.rules = Object.assign(eslintConfig.rules, {
-  "no-param-reassign": ["error", { "props": false }],
-  "prefer-const": ["error", {"destructuring": "all"}],
-  "prefer-destructuring": ["error", { "VariableDeclarator": { "array": false, "object": true }, "AssignmentExpression": { "array": false, "object": false } }, { "enforceForRenamedProperties": false }],
-  "@typescript-eslint/no-unused-vars": ["warn", { "vars": "all", "args": "none", "ignoreRestSiblings": false }],
+  "@typescript-eslint/no-unused-vars": ["warn", { "vars": "all", "args": "none", "ignoreRestSiblings": true }],
+  "no-param-reassign": ["warn", { "props": false }],
+  "prefer-const": ["warn", {"destructuring": "all"}],
+  "prefer-destructuring": ["warn", { "VariableDeclarator": { "array": false, "object": true }, "AssignmentExpression": { "array": false, "object": false } }, { "enforceForRenamedProperties": false }],
 });
 
 // add some stylistic issues
