@@ -94,6 +94,7 @@ if (hasPrettier) {
 // disable some recommended rules
 eslintConfig.rules = {
   "@typescript-eslint/explicit-module-boundary-types": "off",
+  "@typescript-eslint/lines-between-class-members": "off",
   "@typescript-eslint/naming-convention": "off",
   "@typescript-eslint/no-explicit-any": "off",
   "@typescript-eslint/no-non-null-assertion": "off",
@@ -105,6 +106,7 @@ eslintConfig.rules = {
   "@typescript-eslint/restrict-template-expressions": "off",
   "class-methods-use-this": "off",
   "consistent-return": "off",
+  "func-names": "off",
   "global-require": "off",
   "import/extensions": "off",
   "import/prefer-default-export": "off",
@@ -126,18 +128,8 @@ eslintConfig.rules = {
 
 // alter some rule behaviour
 eslintConfig.rules = Object.assign(eslintConfig.rules, {
-  "prefer-destructuring": ["error", {
-    "VariableDeclarator": {
-      "array": false,
-      "object": true
-    },
-    "AssignmentExpression": {
-      "array": false,
-      "object": false
-    }
-  }, {
-    "enforceForRenamedProperties": false
-  }],
+  "no-param-reassign": ["error", { "props": false }],
+  "prefer-destructuring": ["error", { "VariableDeclarator": { "array": false, "object": true }, "AssignmentExpression": { "array": false, "object": false } }, { "enforceForRenamedProperties": false }],
   "@typescript-eslint/no-unused-vars": ["warn", { "vars": "all", "args": "none", "ignoreRestSiblings": false }],
 });
 
