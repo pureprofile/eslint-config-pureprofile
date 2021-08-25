@@ -124,6 +124,23 @@ eslintConfig.rules = {
   "react/state-in-constructor": "off",
 };
 
+// alter some rule behaviour
+eslintConfig.rules = Object.assign(eslintConfig.rules, {
+  "prefer-destructuring": ["error", {
+    "VariableDeclarator": {
+      "array": false,
+      "object": true
+    },
+    "AssignmentExpression": {
+      "array": false,
+      "object": false
+    }
+  }, {
+    "enforceForRenamedProperties": false
+  }],
+  "@typescript-eslint/no-unused-vars": ["warn", { "vars": "all", "args": "none", "ignoreRestSiblings": false }],
+});
+
 // add some stylistic issues
 eslintConfig.rules = Object.assign(eslintConfig.rules, {
   "object-curly-spacing": ["warn", "always"],
