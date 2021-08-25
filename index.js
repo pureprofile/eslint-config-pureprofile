@@ -111,6 +111,7 @@ eslintConfig.rules = {
   "no-await-in-loop": "off",
   "no-continue": "off",
   "no-plusplus": "off",
+  "no-restricted-syntax": "off",
   "no-underscore-dangle": "off",
   "no-void": "off",
   "prefer-arrow-callback": "off",
@@ -126,6 +127,8 @@ eslintConfig.rules = {
 // add some stylistic issues
 eslintConfig.rules = Object.assign(eslintConfig.rules, {
   "object-curly-spacing": ["warn", "always"],
-})
+  "template-curly-spacing": ["warn", "never"],
+  "template-tag-spacing": ["warn", "never"],
+});
 
 module.exports = eslintConfig;
