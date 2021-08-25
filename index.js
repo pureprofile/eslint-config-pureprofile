@@ -127,6 +127,12 @@ eslintConfig.rules = {
   "react/state-in-constructor": "off",
 };
 
+if (hasReact) {
+  eslintConfig.rules = Object.assign(eslintConfig.rules, {
+    "@typescript-eslint/no-var-requires": "off"
+  });
+}
+
 // alter some rule behaviour
 eslintConfig.rules = Object.assign(eslintConfig.rules, {
   "@typescript-eslint/no-unused-vars": ["warn", { "vars": "all", "args": "none", "ignoreRestSiblings": true }],
