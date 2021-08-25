@@ -1,8 +1,8 @@
 {
   "name": "eslint-config-pureprofile",
-  "version": "3.4.1",
+  "version": "4.0.0",
   "engines": {
-    "node": ">=10.0.0"
+    "node": ">=14.0.0"
   },
   "description": "An eslint config module",
   "main": "index.js",
@@ -12,7 +12,21 @@
     "type": "git",
     "url": "https://github.com/pureprofile-warp/eslint-config-pureprofile.git"
   },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "eslint-config-airbnb-base": "*",
+    "eslint-config-airbnb-typescript": "*",
+    "eslint-config-airbnb": "*",
+    "eslint-config-prettier": "*",
+    "eslint-config-react-app": "*",
+    "eslint-plugin-import": "*",
+    "eslint-plugin-jest": "*"
+  },
+  "devDependencies": {
+    "typescript": "*"
+  },
   "peerDependencies": {
-    "eslint": ">=6.0.0"
+    "eslint": ">=7.0.0"
   }
 }
