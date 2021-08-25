@@ -91,11 +91,13 @@ if (hasPrettier) {
   eslintConfig.extends.push("prettier");
 }
 
+// disable some recommended rules
 eslintConfig.rules = {
   "@typescript-eslint/explicit-module-boundary-types": "off",
   "@typescript-eslint/naming-convention": "off",
   "@typescript-eslint/no-explicit-any": "off",
   "@typescript-eslint/no-non-null-assertion": "off",
+  "@typescript-eslint/no-unnecessary-type-assertion": "off",
   "@typescript-eslint/no-unsafe-assignment": "off",
   "@typescript-eslint/no-unsafe-call": "off",
   "@typescript-eslint/no-unsafe-member-access": "off",
@@ -111,6 +113,7 @@ eslintConfig.rules = {
   "no-plusplus": "off",
   "no-underscore-dangle": "off",
   "no-void": "off",
+  "prefer-arrow-callback": "off",
   "react/destructuring-assignment": "off",
   "react/jsx-props-no-spreading": "off",
   "react/no-array-index-key": "off",
@@ -119,5 +122,10 @@ eslintConfig.rules = {
   "react/react-in-jsx-scope": "off",
   "react/state-in-constructor": "off",
 };
+
+// add some stylistic issues
+eslintConfig.rules = Object.assign(eslintConfig.rules, {
+  "object-curly-spacing": ["warn", "always"],
+})
 
 module.exports = eslintConfig;
