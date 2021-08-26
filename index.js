@@ -30,7 +30,6 @@ function getModuleVersion(name, warnIfNotFound) {
 const hasTypescript = getModuleVersion('typescript', true);
 const hasReact = getModuleVersion('react');
 const hasJest = getModuleVersion('jest');
-const hasPrettier = getModuleVersion('prettier', true);
 
 const eslintConfig = {
   extends: [
@@ -87,9 +86,8 @@ if (hasJest) {
   eslintConfig.extends.push("plugin:jest/recommended");
 }
 
-if (hasPrettier) {
-  eslintConfig.extends.push("prettier");
-}
+// we assume all projects use prettier as they should
+eslintConfig.extends.push("prettier");
 
 // disable some recommended rules
 eslintConfig.rules = {
