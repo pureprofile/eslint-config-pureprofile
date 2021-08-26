@@ -47,6 +47,7 @@ npx husky add ".husky/pre-commit"
 sed -i 's/undefined/npx lint-staged/g' .husky/pre-commit
 npx husky add ".husky/pre-push"
 sed -i 's/undefined/npm run build/g' .husky/pre-push
+npm run prepare
 ```
 
 ## old approach (husky v4)
