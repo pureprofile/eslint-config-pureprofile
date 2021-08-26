@@ -118,18 +118,20 @@ eslintConfig.rules = {
   "no-underscore-dangle": "off",
   "no-void": "off",
   "prefer-arrow-callback": "off",
-  "react/destructuring-assignment": "off",
-  "react/jsx-props-no-spreading": "off",
-  "react/no-array-index-key": "off",
-  "react/no-unescaped-entities": "off",
-  "react/prop-types": "off",
-  "react/react-in-jsx-scope": "off",
-  "react/state-in-constructor": "off",
 };
 
 if (hasReact) {
   eslintConfig.rules = Object.assign(eslintConfig.rules, {
-    "@typescript-eslint/no-var-requires": "off"
+    "@typescript-eslint/no-var-requires": "off",
+    "react/button-has-type": "off",
+    "react/destructuring-assignment": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/no-array-index-key": "off",
+    "react/no-unescaped-entities": "off",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
+    "react/state-in-constructor": "off",
   });
 }
 
