@@ -35,7 +35,7 @@ npm uninstall --save is-ci husky lint-staged prettier pretty-quick eslint-config
 npm install --save is-ci eslint-config-pureprofile
 npm install --save-dev husky lint-staged prettier
 npx json -I -f package.json -e "this.scripts.prepare=\"is-ci || husky install\""
-npx json -I -f package.json -e "this.scripts.eslint=\"eslint --fix ./src\""
+npx json -I -f package.json -e "this.scripts.eslint=\"eslint --ext=ts,tsx --fix ./src\""
 npx json -I -f package.json -e "this.scripts.prettier=\"prettier --write ./src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\""
 npx json -I -f package.json -e "this.eslintConfig={\"extends\":\"pureprofile\",\"parserOptions\":{\"project\":\"./tsconfig.json\"}}"
 npx json -I -f package.json -e "this.prettier=\"eslint-config-pureprofile/prettier-config\""
