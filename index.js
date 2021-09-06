@@ -95,6 +95,7 @@ eslintConfig.rules = {
   "@typescript-eslint/lines-between-class-members": "off",
   "@typescript-eslint/naming-convention": "off",
   "@typescript-eslint/no-explicit-any": "off",
+  "@typescript-eslint/no-floating-promises": "off",
   "@typescript-eslint/no-non-null-assertion": "off",
   "@typescript-eslint/no-unnecessary-type-assertion": "off",
   "@typescript-eslint/no-unsafe-assignment": "off",
