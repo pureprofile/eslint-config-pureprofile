@@ -131,6 +131,7 @@ if (hasReact) {
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "react/require-default-props": "off",
+    "react/sort-comp": "off",
     "react/state-in-constructor": "off",
   });
 }
