@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-pureprofile",
-  "version": "4.0.14",
+  "version": "4.0.15",
   "engines": {
     "node": ">=14.0.0"
   },
@@ -13,8 +13,6 @@
     "url": "https://github.com/pureprofile-warp/eslint-config-pureprofile.git"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "*",
-    "@typescript-eslint/parser": "*",
     "eslint-config-airbnb-base": "*",
     "eslint-config-airbnb-typescript": "*",
     "eslint-config-airbnb": "*",
@@ -27,6 +25,8 @@
     "typescript": "*"
   },
   "peerDependencies": {
-    "eslint": ">=7.0.0"
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.0"
   }
 }
