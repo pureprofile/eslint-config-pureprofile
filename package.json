@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-pureprofile",
-  "version": "4.0.16",
+  "version": "4.1.0",
   "engines": {
     "node": ">=14.0.0"
   },
@@ -16,7 +16,8 @@
     "eslint-config-airbnb-base": "*",
     "eslint-config-airbnb-typescript": "*",
     "eslint-config-airbnb": "*",
-    "eslint-config-prettier": "*"
+    "eslint-config-prettier": "*",
+    "eslint-plugin-lodash": "*"
   },
   "devDependencies": {
     "typescript": "*"

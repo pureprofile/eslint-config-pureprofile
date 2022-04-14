@@ -32,9 +32,8 @@ const hasReact = getModuleVersion('react');
 const hasJest = getModuleVersion('jest');
 
 const eslintConfig = {
-  extends: [
-    'eslint:recommended'
-  ]
+  extends: ['eslint:recommended'],
+  plugins: ['lodash']
 };
 
 if (hasTypescript) {
@@ -126,6 +125,14 @@ eslintConfig.rules = {
 if (hasReact) {
   eslintConfig.rules = Object.assign(eslintConfig.rules, {
     "@typescript-eslint/no-var-requires": "off",
+    "lodash/callback-binding": "error",
+    "lodash/collection-method-value": "error",
+    "lodash/collection-return": "error",
+    "lodash/import-scope": ["error", "method"],
+    "lodash/no-double-unwrap": "error",
+    "lodash/no-extra-args": "error",
+    "lodash/no-unbound-this": "error",
+    "lodash/unwrap": "error",
     "react/button-has-type": "off",
     "react/destructuring-assignment": "off",
     "react/function-component-definition": "off",
